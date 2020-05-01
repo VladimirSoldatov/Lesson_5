@@ -42,12 +42,15 @@ def use_dividers(number):
 
 
 def max_any_dividers(number):
-    return max(simple_dividers(number))
+    if number > 1:
+        return max(simple_dividers(number))
+    else:
+        return 1
 
 
 num = int(input('Input number: '))
 is_number_simple(num)
-print (simple_dividers(num))
+print(simple_dividers(num))
 max_divider(num)
 print(use_dividers(num))
 print(max_any_dividers(num))
