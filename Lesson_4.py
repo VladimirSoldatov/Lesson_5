@@ -1,4 +1,4 @@
-import random
+﻿import random
 
 
 def f(list_tail, n):
@@ -28,12 +28,13 @@ def open_file(file_name_user):
             if temp < int(time):
                 temp = int(time)
                 my_str = line.split()[0] + " " + line.split()[1]
+    my_file.close()
     return my_str
 
 
 our_list = ("anna", "andrey", "alex", "vladimir", "valeria",
             "valeria", "victor", "galina", "gleb", "gabriel",
-            "eva", "evgeniy", "jozepine", "jack", "inna",
+            "eva", "eugenia", "jozepine", "jack", "inna",
             "igor", "konstantin", "kirill", "larisa", "leya",
             "maria", "michael", "natalia", "nathan", "thomas")
 new_list = f(our_list, 100)
