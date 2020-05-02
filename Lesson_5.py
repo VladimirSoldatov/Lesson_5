@@ -8,7 +8,7 @@ def is_number_simple(number):
 def simple_dividers(number):
     dividers = []
     count = 2
-    while count < number:
+    while count <= number:
         if number % count == 0:
             dividers.append(count)
 
@@ -42,10 +42,10 @@ def use_dividers(number):
 
 
 def max_any_dividers(number):
-    if number > 1:
+    if len(simple_dividers(number))> 1:
         return max(simple_dividers(number))
     else:
-        return 1
+        return number
 
 
 num = int(input('Input number: '))
