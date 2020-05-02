@@ -42,10 +42,8 @@ def use_dividers(number):
 
 
 def max_any_dividers(number):
-    if len(simple_dividers(number))> 1:
         return max(simple_dividers(number))
-    else:
-        return number
+
 
 
 num = int(input('Input number: '))
