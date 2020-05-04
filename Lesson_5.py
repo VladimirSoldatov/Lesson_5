@@ -18,7 +18,7 @@ def simple_dividers(number):
 
 def max_divider(number):
     d = 2
-    last_d = 0
+
     while d * d <= number:
         if number % d == 0:
             number //= d
@@ -42,8 +42,7 @@ def use_dividers(number):
 
 
 def max_any_dividers(number):
-        return max(simple_dividers(number))
-
+    return max(simple_dividers(number))
 
 
 num = int(input('Input number: '))
