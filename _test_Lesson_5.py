@@ -1,14 +1,11 @@
 import pytest
 
 
-
 def is_number_simple(number):
     if all([number % i for i in range(2, int(number ** 0.5) + 1)]):
         print("Number " + str(number) + " is simple")
-        return True
     else:
         print("Number " + str(number) + " is not simple")
-        return False
 
 
 def simple_dividers(number):
@@ -54,4 +51,13 @@ def max_any_dividers(number):
         return number
 
 
-print(max_any_dividers(7))
+def test_integer_sort():
+    number = 17
+    assert max(simple_dividers(number)) == 17
+
+# num = int(input('Input number: '))
+# is_number_simple(num)
+# print(simple_dividers(num))
+# max_divider(num)
+# print(use_dividers(num))
+# print(max_any_dividers(num))
